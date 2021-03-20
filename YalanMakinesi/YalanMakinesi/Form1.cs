@@ -19,12 +19,17 @@ namespace YalanMakinesi
 
         private void btnYes_Click(object sender, EventArgs e)
         {
+            this.BackColor = Color.Green;
             MessageBox.Show("TEBRIKLER DOĞRU CEVAP");
+            
         }
 
         private void btnNO_Click(object sender, EventArgs e)
         {
+            this.BackColor = Color.Red;
             MessageBox.Show("MAALESEF BILEMEDINIZ :(");
+          
+
         }
     }
 }
