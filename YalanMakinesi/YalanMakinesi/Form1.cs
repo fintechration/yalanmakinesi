@@ -25,8 +25,14 @@ namespace YalanMakinesi
 
             InitializeComponent();
             Log.Information("--------------------------Uygulama calıstırıldı--------------------------");
+            FormClosed += Form1_Formclosed;
             FormClosing += Form1_FormClosing;
           
+        }
+
+        private void Form1_Formclosed(object sender, FormClosedEventArgs e)
+        {
+            Log.Information("Uygulama kapatıldı");
         }
 
         private void btnYes_Click(object sender, EventArgs e)
@@ -62,10 +68,9 @@ namespace YalanMakinesi
                 // iptal ederseniz ne yapacağınızı buraya yazın
                 
             }
-            else
-            {
-                Log.Information("Uygulama kapatıldı");
-            }
+           
+                
+           
 
         }
     }
